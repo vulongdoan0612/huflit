@@ -1,0 +1,65 @@
+.toggle{
+    top:30%;
+    display:block;
+    position: fixed;
+    z-index: 222;
+
+}
+.toggle.active {
+        z-index: 222;
+
+}
+
+.toggle.active .toggleMenu {
+transition: all 0.5 linear;
+
+/* transform: translateY(0%); */
+transform: translateX(40%);
+transform: translateY(-148px);
+
+
+}
+.toggle.activeShow .show{
+     background-size:cover;
+    position: fixed;
+    top:25%;
+    left:0;
+    z-index: 1900;
+    height:60%;
+    width:100%;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+.toggleMenu{
+transition: all 0.3s ease;
+
+transform: translate(-700%,-148px);
+}
+.show{
+    background-size:cover;
+    position: fixed;
+    
+    top:0;
+    left:0;
+    z-index: 0;
+    height:100%;
+    width:100%;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+.block {
+    display:block;
+    
+}
+.none ~ .toggle .toggleMenu {
+    display:none;
+}
+.show{
+    top:0;
+    opacity: 1;
+    left:0;
+    visibility: visible;
+    transition: 0.3s ease-in-out;
+    z-index: 100000;
+}
+

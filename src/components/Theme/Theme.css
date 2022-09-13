@@ -1,0 +1,36 @@
+.toggle{
+    width:60px;
+    height:28px;
+    border-radius: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2px 4px;
+    background-color: aquamarine;
+       user-select: none;
+       cursor: pointer;
+      margin-right:auto;
+       
+}
+.theme{
+    padding-left:20px;
+    width:100%;
+    vertical-align: middle;
+    transition: all 0.3s ;
+}
+.spinner{
+    width:24px;
+    height:24px;
+    border-radius: 50%;
+    background-color:white;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+}
+.spinner.active{
+    transform: translateX(30px);
+}
+.toggle.active{
+    
+}

@@ -1,0 +1,22 @@
+.up-icon{
+    position: fixed;
+    right:20px;
+    bottom:50px;
+    z-index: 300;
+    font-size: 40px;
+    background-color: rgba(100,100,100,0.5);
+    border-radius: 100px;
+    text-align: center;
+    width:57px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    transform: scale(1);
+    &:hover{
+        color:white;
+        transform: scale(1.2);
+        background-color: rgba(100,100,100,0.8);
+    }
+    @media screen and (max-width:600px){
+        right:40px; 
+    }
+}

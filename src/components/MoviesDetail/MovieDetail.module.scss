@@ -1,0 +1,71 @@
+
+.container{
+    position: relative;
+    width:80%;
+    height:100%;
+    background: linear-gradient(90deg,rgba(0,0,0,0.94)50%,transparent);
+    @media screen and (max-width:1184px){
+            background: linear-gradient(90deg,rgba(0,0,0,0.95)40%,rgba(0,0,0,0.733),transparent);
+            width:88%;
+    }
+      @media screen and (max-width:980px){
+            background: linear-gradient(90deg,rgba(0,0,0,0.95)50%,transparent);
+            width:100%;
+    }
+      @media screen and (max-width:600px){
+            background: linear-gradient(90deg,rgba(0,0,0,0.88)60%,transparent)
+    }
+            user-select: none;
+
+}
+.movie-info{
+    width:65%;
+    height:100%;
+    padding-left:25px;
+    font-size:18px;
+        user-select: none;
+     @media screen and (max-width:600px){
+    font-size:15px;
+            user-select: none;
+
+    width:80%;
+    }
+}
+.movie-title{
+}
+.movie-content{
+    display:flex;
+    .rating{
+        color:green;
+    }
+    .popularity{
+        color:rgb(189, 189, 32);
+        margin-left:12px;
+    }
+}
+
+.relasedate, .runtime{
+    margin-top:12px;
+}
+.overview{
+    margin-top:20px;
+    color:rgba(255,255,255,0.6);
+    line-height:1.4;
+    font-size: 18px;
+    overflow: hidden;
+    max-height: 80px;
+      @media screen and (max-width:600px){
+                font-size: 13px;
+      }
+}
+body{
+    color:white;
+}
+
+@keyframes fadeIn{
+    0% {background:rgba(0,0,0,0);}
+    100% {background:rgba(0,0,0,0.6);}
+}
+@keyframes fadeLeft{
+    
+}	

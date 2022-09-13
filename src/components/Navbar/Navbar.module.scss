@@ -1,0 +1,130 @@
+.all{
+    position: fixed;
+    z-index: 999;
+    width:100%;
+}
+.wrapper{
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color: black;
+    @media screen and (max-width:425px){
+        flex-direction: row;
+    }
+    @media screen and (max-width:320px){
+        flex-direction: column;
+    }
+     @media screen and (max-width:375px){
+        flex-direction: column;
+    }
+    @media screen and (max-width:1024px) and (min-width:768px){
+        flex-direction: row;
+
+    }
+  
+}
+.search-input{
+    display:flex;
+    user-select: none;
+    
+}
+.icon{
+    color:#fff;
+    user-select: none;
+    cursor: pointer;
+    padding:10px;
+    &:hover{
+        color:#fff;
+    }
+    position: absolute;
+    
+    
+}
+.input_menu{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-between;
+    @media screen and (min-width:768px) {
+
+    }
+}
+.menu{
+     @media screen and (min-width:768px) and (max-width:1024px) {
+display:none;
+    }
+    @media screen and (max-width:767px) and (min-width:425px) {
+display:none;
+    }
+     @media screen and (max-width:425px){
+display:none;    }
+}
+.input{
+    padding-left:30px;
+    cursor: pointer;
+    color:white;
+    background-color: transparent;
+    transition: all 0.3s ease-in;   
+    user-select: none;
+    position: relative;
+    
+    &:focus{
+        border-radius: 8px;
+        background-color: transparent;
+        opacity: 1;
+        
+    }
+    &:focus .icon{
+        padding:20px;
+    }
+ 
+     @media screen and (min-width:768px) and (max-width:1024px) {
+            width:500px;
+        padding-left:0px;
+       margin-left:26px;
+    padding-right:0px;
+    opacity: 1;
+    
+    }
+
+    opacity: 0;
+    padding-top:5px;
+    padding-bottom:5px;
+    
+    padding-right:0px;
+}
+.date{
+    @media screen and (max-width:425px){
+        display:none;
+    }
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    margin-left:20px;
+    text-align: center;
+    
+}
+.time1{
+    display:block;
+    @media screen and (max-width:768px) and (min-width:425px) {
+        display:none;
+    }
+}
+.time{
+    
+    display:none;
+    @media screen and (max-width:768px) and (min-width:425px) {
+        display:block;
+        
+    }
+}
+.tog{
+    @media screen and (max-width:1440px) {
+        display:none;
+    }
+}

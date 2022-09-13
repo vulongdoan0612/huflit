@@ -1,0 +1,22 @@
+
+.leftBtn{
+    outline: none;
+    border:none;
+    background-color: #ff652f;
+    display:flex;
+    flex-direction: column;
+  padding-top:2px;
+    padding-bottom:2px;
+       cursor: pointer;
+
+}
+.leftSpan{
+    width:20px;
+    height:5px;
+    background-color: black;
+  
+    margin-top:2px;
+    margin-left:5px;
+    margin-right:5px;
+    margin-bottom:2px;
+}

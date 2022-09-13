@@ -1,0 +1,51 @@
+.backdrop{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index: 1000;
+    height:100%;
+    background-color: rgba(0,0,0,0.6);
+    animation: fadeIn 1s cubic-bezier(0.17,0.85,0.45,1) forwards;
+    user-select: none;
+}
+.showBackdrop{
+    display:block;
+}
+.hideBackdrop{
+    display:none;
+}
+.modal{
+    background-size:cover;
+    position: fixed;
+    top:25%;
+    left:0;
+    z-index: 1900;
+    height:60%;
+    width:100%;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+@media screen and (max-width:1184px){
+    .modal{
+        height:70%;
+    }
+}
+@media screen and (max-width:600px){
+    .modal{height:80%;}
+}
+.showModal{
+    top:25%;
+    opacity: 1;
+    left:0;
+    visibility: visible;
+    transition: 0.3s ease-in-out;
+    z-index: 100000;
+
+}
+.hideModal{
+    top:0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
